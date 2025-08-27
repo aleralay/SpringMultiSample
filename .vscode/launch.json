@@ -1,0 +1,52 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "springsample.App",
+            "projectName": "sys-sqs-pooling"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-App<subsys-common>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "springsample.App",
+            "projectName": "subsys-common",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-App<subsys-a-boot>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "springsample.App",
+            "projectName": "subsys-a-boot",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=62494 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=subsys-a-boot"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-App<subsys-b-boot>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "springsample.App",
+            "projectName": "subsys-b-boot",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-App<subsys-c-boot>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "springsample.App",
+            "projectName": "subsys-c-boot",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
