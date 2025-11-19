@@ -1,5 +1,5 @@
 ---
-mode: 'agent'
+agent: agent
 description: '現在のファイルのユニットテストを作成する'
 ---
 
